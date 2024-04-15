@@ -10,6 +10,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # We will use Angle Driver.
 USE_ANGLE := true
 
+#HWUI
+TARGET_USES_VULKAN := true
+HWUI_COMPILE_FOR_PERF := true
+
 PRODUCT_PACKAGES += \
 	libEGL_angle \
 	libGLESv1_CM_angle \
