@@ -7,6 +7,18 @@
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# We will use Angle Driver.
+USE_ANGLE := true
+
+PRODUCT_PACKAGES += \
+	libEGL_angle \
+	libGLESv1_CM_angle \
+	libGLESv2_angle
+
+PRODUCT_VENDOR_PROPERTIES += \
+	ro.hardware.egl = angle \
+	ro.hardware.egl_legacy = adreno
+
 # A/B
 AB_OTA_UPDATER := true
 
