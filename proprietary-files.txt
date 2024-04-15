@@ -321,8 +321,8 @@ vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 
 # Graphics (Vulkan)
-vendor/lib/hw/vulkan.adreno.so
-vendor/lib64/hw/vulkan.adreno.so
+#vendor/lib/hw/vulkan.adreno.so
+#vendor/lib64/hw/vulkan.adreno.so
 
 # IRQ balance
 vendor/bin/msm_irqbalance
