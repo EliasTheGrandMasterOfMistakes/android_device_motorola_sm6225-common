@@ -23,6 +23,12 @@ PRODUCT_VENDOR_PROPERTIES += \
 	ro.hardware.egl = angle \
 	ro.hardware.egl_legacy = adreno
 
+# Configure hwui renderer and renderengine backend
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.hwui.use_vulkan=true \
+    debug.renderengine.backend=skiaglthreaded
+
+
 # A/B
 AB_OTA_UPDATER := true
 
